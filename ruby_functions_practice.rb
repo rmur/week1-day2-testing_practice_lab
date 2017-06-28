@@ -52,29 +52,28 @@ def number_to_full_month_name(month_number)
 end
 
 def number_to_short_month_name(month_number)
- case month_number
-  when 1
-  "Jan"
-  when 3
-  "Mar"
-  when 9
-  "Sep"
+  case month_number
+    when 1
+    "Jan"
+    when 3
+    "Mar"
+    when 9
+    "Sep"
   end
 end
 
 def vol(x)
- return x * x * x
+ return x ** 3 #cubed
 end
 
 def sphere(x)
-volume = ((4 * (Math::PI )*  x * x * x) /3)
-return volume.round(2)
-
+  volume = (4 * Math::PI *  x ** 3) /3
+  return volume.round(2)
 end 
 
 def fahrenheit_to_celsius(x)
-converter = (x - 32) * (5.0/9.0)
-return converter.round(3)
+  converter = (x - 32) * (5.0/9.0)
+  return converter.round(3)
 end
 
 
